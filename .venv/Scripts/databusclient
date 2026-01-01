@@ -1,0 +1,6 @@
+#!C:\Users\Tahoora\Documents\databus\.venv\Scripts\python.exe
+import sys
+from databusclient.cli import app
+
+if __name__ == '__main__':
+    sys.exit(app())

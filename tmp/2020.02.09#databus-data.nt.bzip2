@@ -1,0 +1,44 @@
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns1:	<https://databus.dbpedia.org/dbpedia/> .
+@prefix ns2:	<https://dataid.dbpedia.org/databus#> .
+ns1:databus	rdf:type	ns2:Group .
+@prefix ns3:	<https://databus.dbpedia.org/> .
+ns1:databus	ns2:account	ns3:dbpedia .
+@prefix ns4:	<https://databus.dbpedia.org/dbpedia/databus/> .
+ns4:databus-data	rdf:type	ns2:Artifact ;
+	ns2:account	ns3:dbpedia ;
+	ns2:group	ns1:databus .
+<https://databus.dbpedia.org/dbpedia/databus/databus-data/2020.02.09#databus-data.nt.bzip2>	rdf:type	ns2:Part .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms:	<http://purl.org/dc/terms/> .
+<https://databus.dbpedia.org/dbpedia/databus/databus-data/2020.02.09#databus-data.nt.bzip2>	dcterms:modified	"2023-06-26T12:45:47.218Z"^^xsd:dateTime ;
+	dcterms:hasVersion	"2020.02.09" .
+@prefix ns7:	<http://www.w3.org/ns/dcat#> .
+<https://databus.dbpedia.org/dbpedia/databus/databus-data/2020.02.09#databus-data.nt.bzip2>	ns7:byteSize	34148226 ;
+	dcterms:issued	"2020-02-09T00:00:00Z"^^xsd:dateTime ;
+	ns2:file	<https://databus.dbpedia.org/dbpedia/databus/databus-data/2020.02.09/databus-data.nt.bzip2> ;
+	ns2:sha256sum	"090b2e650aa637857dc277516227127b889accc6dc20bf8e04e558a0076f2ae7" ;
+	ns2:compression	"bzip2" ;
+	ns7:downloadURL	<https://databus.dbpedia.org/data/databus/databus-data/2020.02.09/databus-data.nt.bz2> ;
+	ns2:formatExtension	"nt" .
+@prefix ns8:	<http://dataid.dbpedia.org/ns/core#> .
+<https://databus.dbpedia.org/dbpedia/databus/databus-data/2020.02.09>	rdf:type	ns8:Dataset ,
+		ns2:Version ;
+	dcterms:modified	"2023-06-26T12:45:47.218Z"^^xsd:dateTime .
+@prefix ns9:	<https://databus.dbpedia.org/dbpedia#> .
+<https://databus.dbpedia.org/dbpedia/databus/databus-data/2020.02.09>	dcterms:publisher	ns9:this ;
+	ns7:distribution	<https://databus.dbpedia.org/dbpedia/databus/databus-data/2020.02.09#databus-data.nt.bzip2> ;
+	dcterms:title	"Database dump of databus.dbpedia.org/repo/sparql" ;
+	dcterms:hasVersion	"2020.02.09" ;
+	ns2:artifact	ns4:databus-data ;
+	ns2:account	ns3:dbpedia ;
+	dcterms:description	"Export of the dataid metadata from the triplestore" ;
+	dcterms:abstract	"Export of the dataid metadata from the triplestore" ;
+	dcterms:issued	"2020-02-09T00:00:00Z"^^xsd:dateTime ;
+	ns2:group	ns1:databus .
+@prefix ns10:	<https://w3id.org/security#> .
+<https://databus.dbpedia.org/dbpedia/databus/databus-data/2020.02.09>	ns10:proof	<137616f3aa37386c78092c84895a8a70> .
+@prefix ns11:	<http://purl.oclc.org/NET/rdflicense/> .
+<https://databus.dbpedia.org/dbpedia/databus/databus-data/2020.02.09>	dcterms:license	ns11:cc-0 .
+<137616f3aa37386c78092c84895a8a70>	rdf:type	ns2:DatabusTractateV1 ;
+	ns10:signature	"CgKiTgOqSk+xZVRaxVQ5l9rC/Ctk5chew3sjDk5hMMu50R834KpAbKyrEUqe6bT9ePlch5zy76vFCTgKGK7Eom50Aul/w8BlrHcQ1NfXLNmFCyO1I54q8VJWKDBmZ+wjjN6+yj4vjfynAGS0RMRDfAePzGWuRbMPbw0lo7RQxMR5xydT6Gd0PnmnI9wRhpvf+Wex1PALU2kPAlnzaLrfEzd9ciW1gxwlbT5viUlyIORgta1ujdD1a/mJ4FDLc2yNlCb6U/AR5NjFvRE90prCTMvs7KpsIf4VfXSX8UF2wfanD5+6eNOIInD1ZQxssX5f7MiGn/WxqrX2v1Tp2L1B0A==" .
